@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLITCHED RECORDS | INDUSTRIAL MULTIMEDIA</title>
+    <style>
+        :root {
+            --bg: #050505;
+            --text: #ffffff;
+            --accent: #333;
+            --gold: #D4AF37;
+        }
+        
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 2px solid var(--text);
+            padding-bottom: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 8px;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .subtitle {
+            font-size: 0.8rem;
+            color: #888;
+            letter-spacing: 4px;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        /* GRID SYSTEM */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            border-left: 5px solid var(--text);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        /* ITEM CARDS */
+        .card {
+            background: #111;
+            border: 1px solid var(--accent);
+            padding: 20px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--text);
+            display: block;
+        }
+
+        .card:hover {
+            border-color: var(--text);
+            background: #1a1a1a;
+            transform: translateX(10px);
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            color: var(--text);
+        }
+
+        .card-meta {
+            font-size: 0.8rem;
+            color: #666;
+            font-family: 'Courier New', monospace;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: auto;
+            padding-top: 60px;
+            text-align: center;
+            font-size: 0.7rem;
+            color: #444;
+            width: 100%;
+            max-width: 800px;
+            border-top: 1px solid #111;
+        }
+        
+        .contact-info {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* RESPONSIVE */
+        @media (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+            }
+            .full-width {
+                grid-column: span 2;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GLITCHED RECORDS</h1>
+        <div class="subtitle">EST. 2024 // OCEANSIDE, CA</div>
+    </header>
+
+    <div class="grid-container">
+
+        <div class="full-width">
+            <div class="section-title">DIVISION 01: AUDIO</div>
+            
+            <a href="https://thetrophyhoe.com" class="card">
+                <div class="card-title">The Trophy Hoe</div>
+                <div class="card-meta">STATUS: ACTIVE // GENRE: INDUSTRIAL HIPHOP</div>
+            </a>
+            
+            <a href="#" class="card" style="margin-top: 10px; opacity: 0.6; cursor: default;">
+                <div class="card-title">S.T.I. (Sonically Transmitted Intelligence)</div>
+                <div class="card-meta">STATUS: CLASSIFIED // RELEASE: 2026</div>
+            </a>
+        </div>
+
+        <div class="full-width">
+            <div class="section-title">DIVISION 02: VISUAL + FILM</div>
+            
+            <a href="#" class="card" style="opacity: 0.6; cursor: default;">
+                <div class="card-title">Copley Code</div>
+                <div class="card-meta">FORMAT: FEATURE FILM // STATUS: IN DEVELOPMENT</div>
+            </a>
+
+            <a href="#" class="card" style="margin-top: 10px; opacity: 0.6; cursor: default;">
+                <div class="card-title">Project: Jannette</div>
+                <div class="card-meta">FORMAT: UNKNOWN // STATUS: REDACTED</div>
+            </a>
+            
+            <a href="#" class="card" style="margin-top: 10px; opacity: 0.6; cursor: default;">
+                <div class="card-title">T.H.E. A.NAMNESIS</div>
+                <div class="card-meta">FORMAT: MULTIMEDIA // STATUS: Q2 2026</div>
+            </a>
+        </div>
+
+        <div class="full-width">
+            <div class="section-title">DIVISION 03: CORPORATE</div>
+            
+            <div class="card" style="cursor: default;">
+                <div class="card-title">Headquarters</div>
+                <div class="card-meta">
+                    432 Edgehill Ln, Unit 122<br>
+                    Oceanside, CA 92054
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="contact-info">
+            CEO: Indigo Holliday<br>
+            PHONE: 619.953.2720<br>
+            EMAIL: <a href="mailto:stayglitched@glitchedrecords.com" style="color: #666; text-decoration: none;">stayglitched@glitchedrecords.com</a>
+        </div>
+        <div>
+            &copy; 2025 GLITCHED RECORDS. ALL RIGHTS RESERVED.<br>
+            PROTOCOL: ZERO-BURN ACTIVE.
+        </div>
+    </footer>
+
+</body>
+</html>

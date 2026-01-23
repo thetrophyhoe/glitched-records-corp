@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLITCHED RECORDS | INDUSTRIAL MULTIMEDIA</title>
+    
     <link rel="icon" type="image/png" href="glitched_records_seal.png">
+    
     <style>
         :root {
             --bg: #050505;
@@ -12,6 +14,7 @@
             --accent: #333;
             --highlight: #ffffff;
             --glitch-color: #ff00ff;
+            --green-matrix: #00ff00;
         }
         
         body {
@@ -122,6 +125,15 @@
             letter-spacing: 1px;
         }
 
+        /* ARTIST LOGO IN CARD */
+        .artist-logo-mini {
+            height: 50px;
+            width: auto;
+            display: block;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 2px #fff);
+        }
+
         .card-meta {
             font-size: 0.75rem;
             color: #888;
@@ -149,6 +161,15 @@
             line-height: 1.8;
         }
 
+        .hashtag-footer {
+            color: var(--green-matrix);
+            font-size: 1rem;
+            letter-spacing: 3px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-shadow: 0 0 5px var(--green-matrix);
+        }
+
         /* RESPONSIVE */
         @media (min-width: 768px) {
             .grid-container {
@@ -166,7 +187,6 @@
 
     <header>
         <img src="glitched_records_seal.png" alt="GLITCHED RECORDS" class="logo-main">
-        
         <div class="subtitle">EST. 2024 // OCEANSIDE, CA // CEO: INDIGO HOLLIDAY</div>
     </header>
 
@@ -176,7 +196,8 @@
             <div class="section-title">DIVISION 01: AUDIO ROSTER</div>
             
             <a href="https://thetrophyhoe.com" class="card">
-                <div class="card-title">The Trophy Hoe</div>
+                <img src="logo_script_white.png" alt="The Trophy Hoe" class="artist-logo-mini">
+                
                 <div class="card-meta"><span class="status-live">STATUS: ACTIVE</span> // GENRE: INDUSTRIAL HYPER-POP</div>
                 <div class="card-meta" style="margin-top:5px; font-size:0.65rem;">ASSET ID: GR-001 // PRIMARY INTERFACE</div>
             </a>
@@ -230,6 +251,8 @@
     </div>
 
     <footer>
+        <div class="hashtag-footer">#STAYGLITCHED</div>
+        
         <div class="contact-info">
             DIRECT: 619.953.2720<br>
             UPLINK: <a href="mailto:stayglitched@glitchedrecords.com" style="color: #888; text-decoration: none;">stayglitched@glitchedrecords.com</a>

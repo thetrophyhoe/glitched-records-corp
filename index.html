@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLITCHED RECORDS | INDUSTRIAL MULTIMEDIA</title>
-    
     <link rel="icon" type="image/png" href="glitched_records_seal.png">
     
     <style>
@@ -13,7 +12,7 @@
             --text: #e0e0e0;
             --accent: #333;
             --highlight: #ffffff;
-            --glitch-color: #ff00ff;
+            --glitch-color: #ff0055; /* Changed to BLOOD RED for this era */
             --green-matrix: #00ff00;
         }
         
@@ -31,14 +30,12 @@
             overflow-x: hidden;
         }
 
-        /* CRT SCANLINE EFFECT */
         .scanlines {
             background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
             background-size: 100% 4px;
             position: fixed; pointer-events: none; top: 0; right: 0; bottom: 0; left: 0; z-index: 10;
         }
 
-        /* HEADER */
         header {
             text-align: center;
             margin-bottom: 60px;
@@ -53,7 +50,7 @@
             width: 80%;
             display: block;
             margin: 0 auto 20px auto;
-            filter: drop-shadow(0 0 10px rgba(255,0,255,0.2)); 
+            filter: drop-shadow(0 0 10px rgba(255,0,0,0.3)); /* RED GLOW */
         }
 
         .subtitle {
@@ -64,7 +61,6 @@
             margin-top: 20px;
         }
 
-        /* GRID SYSTEM */
         .grid-container {
             display: grid;
             grid-template-columns: 1fr;
@@ -86,7 +82,6 @@
             color: var(--highlight);
         }
 
-        /* ITEM CARDS */
         .card {
             background: rgba(20,20,20,0.8);
             border: 1px solid var(--accent);
@@ -100,8 +95,8 @@
         }
 
         .card:hover {
-            border-color: var(--highlight);
-            background: #1a1a1a;
+            border-color: var(--glitch-color);
+            background: #150505; /* Subtle red tint on hover */
             transform: translateX(5px);
         }
         
@@ -125,13 +120,48 @@
             letter-spacing: 1px;
         }
 
-        /* ARTIST LOGO IN CARD */
+        /* --- NEW LOGO SCALING --- */
         .artist-logo-mini {
-            height: 50px;
-            width: auto;
+            width: 100%;
+            max-width: 280px; /* BIGGER to show detail */
+            height: auto;
             display: block;
-            margin-bottom: 15px;
-            filter: drop-shadow(0 0 2px #fff);
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.6)); /* Blood glow */
+        }
+
+        /* --- ACTION BUTTONS (SUB-MENU) --- */
+        .action-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-action {
+            flex: 1;
+            background: #000;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.75rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: 0.3s;
+            min-width: 120px;
+        }
+        
+        .btn-action:hover {
+            background: var(--glitch-color);
+            border-color: var(--glitch-color);
+            color: #000;
+        }
+        
+        .btn-buy {
+            border-color: var(--glitch-color);
+            color: var(--glitch-color);
         }
 
         .card-meta {
@@ -141,43 +171,32 @@
         }
 
         .status-live { color: #00ff00; }
-        .status-redacted { color: #ff0055; }
-
-        /* FOOTER */
-        footer {
-            margin-top: auto;
-            padding-top: 60px;
-            text-align: center;
-            font-size: 0.7rem;
-            color: #444;
-            width: 100%;
-            max-width: 900px;
-            border-top: 1px solid #111;
-            letter-spacing: 1px;
-        }
         
-        .contact-info {
-            margin-bottom: 20px;
-            line-height: 1.8;
+        .video-container {
+            position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 15px; border: 1px solid #333;
+        }
+        .video-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
         }
 
+        .contact-form input, .contact-form textarea {
+            width: 100%; background: #111; border: 1px solid #333; color: #fff; padding: 15px; margin-bottom: 15px; font-family: 'Courier New', monospace; box-sizing: border-box;
+        }
+        .btn-submit {
+            background: transparent; border: 1px solid var(--highlight); color: var(--highlight); padding: 10px 30px; font-family: 'Courier New', monospace; font-weight: bold; text-transform: uppercase; cursor: pointer; transition: 0.3s;
+        }
+        .btn-submit:hover { background: var(--highlight); color: #000; }
+
+        footer {
+            margin-top: auto; padding-top: 60px; text-align: center; font-size: 0.7rem; color: #444; width: 100%; max-width: 900px; border-top: 1px solid #111;
+        }
         .hashtag-footer {
-            color: var(--green-matrix);
-            font-size: 1rem;
-            letter-spacing: 3px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            text-shadow: 0 0 5px var(--green-matrix);
+            color: var(--green-matrix); font-size: 1rem; letter-spacing: 3px; font-weight: bold; margin-bottom: 15px; text-shadow: 0 0 5px var(--green-matrix);
         }
 
-        /* RESPONSIVE */
         @media (min-width: 768px) {
-            .grid-container {
-                grid-template-columns: 1fr 1fr;
-            }
-            .full-width {
-                grid-column: span 2;
-            }
+            .grid-container { grid-template-columns: 1fr 1fr; }
+            .full-width { grid-column: span 2; }
         }
     </style>
 </head>
@@ -195,12 +214,26 @@
         <div class="full-width">
             <div class="section-title">DIVISION 01: AUDIO ROSTER</div>
             
-            <a href="https://thetrophyhoe.com" class="card">
-                <img src="logo_script_white.png" alt="The Trophy Hoe" class="artist-logo-mini">
+            <div class="card">
+                <a href="https://thetrophyhoe.com">
+                    <img src="logo_era_antichrist.png" alt="The Trophy Hoe" class="artist-logo-mini">
+                </a>
                 
                 <div class="card-meta"><span class="status-live">STATUS: ACTIVE</span> // GENRE: INDUSTRIAL HYPER-POP</div>
                 <div class="card-meta" style="margin-top:5px; font-size:0.65rem;">ASSET ID: GR-001 // PRIMARY INTERFACE</div>
-            </a>
+
+                <div class="action-row">
+                    <a href="https://thetrophyhoe.com/sacred-spoils" class="btn-action btn-buy">
+                        $6.66 | PRE-ORDER
+                    </a>
+                    <a href="https://thetrophyhoe.com/sacred-spoils" class="btn-action">
+                        SACRED SPOILS | STORE
+                    </a>
+                    <a href="https://thetrophyhoe.com" class="btn-action" style="border-color:#444;">
+                        VISIT TERMINAL
+                    </a>
+                </div>
+            </div>
             
             <div class="card" style="margin-top: 10px; opacity: 0.5; cursor: default;">
                 <div class="card-title">S.T.I. (Sonically Transmitted Intelligence)</div>
@@ -208,38 +241,31 @@
             </div>
         </div>
 
-        <div>
+        <div class="full-width">
             <div class="section-title">DIVISION 02: VISUAL WORKS</div>
             
-            <a href="https://youtube.com/@trophyhoe" class="card">
-                <div class="card-title">T.H.E. A.NAMNESIS</div>
+            <a href="https://youtu.be/ZxDRKODERKQ" target="_blank" class="card" style="margin-bottom: 15px;">
+                <div class="card-title">T.H.E. A.NAMNESIS of a GODKILLER: Bloody Gnosis</div>
                 <div class="card-meta"><span class="status-live">STATUS: DEPLOYED</span> // SHORT FILM</div>
             </a>
 
-            <div class="card" style="margin-top: 10px; opacity: 0.5; cursor: default;">
+            <div class="card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/RqCWZNkx4yg" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-title">T.H.E. A.NAMNESIS</div>
+                <div class="card-meta"><span class="status-live">STATUS: INCOMING</span> // WEBISHORTS SERIES</div>
+            </div>
+
+            <div class="card" style="margin-top: 15px; opacity: 0.5; cursor: default;">
                 <div class="card-title">Copley Code</div>
                 <div class="card-meta">STATUS: DEVELOPMENT // FEATURE</div>
             </div>
         </div>
 
         <div>
-            <div class="section-title">DIVISION 03: SUPPLY CHAIN</div>
-            
-            <a href="https://thetrophyhoe.com/sacred-spoils" class="card">
-                <div class="card-title">SACRED SPOILS</div>
-                <div class="card-meta"><span class="status-live">STATUS: OPEN</span> // OFFICIAL MERCHANDISE</div>
-            </a>
-
-            <div class="card" style="margin-top: 10px; opacity: 0.5; cursor: default;">
-                <div class="card-title">PHYSICAL MEDIA</div>
-                <div class="card-meta">STATUS: PENDING MANUFACTURING</div>
-            </div>
-        </div>
-
-        <div class="full-width">
-            <div class="section-title">DIVISION 04: CORPORATE HQ</div>
-            
-            <div class="card" style="cursor: default; text-align: center;">
+            <div class="section-title">DIVISION 03: CORPORATE HQ</div>
+            <div class="card" style="cursor: default;">
                 <div class="card-title">GLITCHED RECORDS</div>
                 <div class="card-meta">
                     432 EDGEHILL LN, UNIT 122<br>
@@ -248,19 +274,28 @@
             </div>
         </div>
 
+        <div class="full-width">
+            <div class="section-title">DIVISION 04: SECURE UPLINK</div>
+            <div class="card" style="cursor: default;">
+                <form action="https://formspree.io/f/mdaelyjr" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="IDENTIFICATION (NAME)" required>
+                    <input type="email" name="email" placeholder="RETURN FREQUENCY (EMAIL)" required>
+                    <input type="text" name="subject" placeholder="SUBJECT">
+                    <textarea name="message" rows="5" placeholder="ENCRYPTED MESSAGE..." required></textarea>
+                    <button type="submit" class="btn-submit">TRANSMIT DATA</button>
+                </form>
+            </div>
+        </div>
+
     </div>
 
     <footer>
         <div class="hashtag-footer">#STAYGLITCHED</div>
-        
         <div class="contact-info">
             DIRECT: 619.953.2720<br>
             UPLINK: <a href="mailto:stayglitched@glitchedrecords.com" style="color: #888; text-decoration: none;">stayglitched@glitchedrecords.com</a>
         </div>
-        <div>
-            &copy; 2026 GLITCHED RECORDS. ALL RIGHTS RESERVED.<br>
-            "THE GOSPEL OF GLITCH & GODHOOD"
-        </div>
+        <div>&copy; 2026 GLITCHED RECORDS. ALL RIGHTS RESERVED.</div>
     </footer>
 
 </body>

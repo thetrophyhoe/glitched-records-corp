@@ -171,10 +171,26 @@
 
         .status-live { color: #00ff00; }
         
+        /* STANDARD 16:9 VIDEO */
         .video-container {
             position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 15px; border: 1px solid #333;
         }
         .video-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        }
+
+        /* NEW VERTICAL 9:16 VIDEO FOR SHORTS */
+        .video-container-vertical {
+            position: relative; 
+            padding-bottom: 177.77%; /* 9:16 Aspect Ratio */
+            height: 0; 
+            margin-bottom: 15px; 
+            border: 1px solid #333;
+            max-width: 320px; /* Constrain width on desktop */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .video-container-vertical iframe {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
         }
 
@@ -243,6 +259,14 @@
         <div class="full-width">
             <div class="section-title">DIVISION 02: VISUAL WORKS</div>
             
+            <div class="card" style="margin-bottom: 15px;">
+                <div class="video-container-vertical">
+                    <iframe src="https://www.youtube.com/embed/mnYIsO-iQ-c" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card-title">PROJECT: JANNETTE</div>
+                <div class="card-meta"><span class="status-live">STATUS: TEASER DEPLOYED</span> // TIL DEATH DO US PART</div>
+            </div>
+
             <a href="https://youtu.be/ZxDRKODERKQ" target="_blank" class="card" style="margin-bottom: 15px;">
                 <div class="card-title">T.H.E. A.NAMNESIS of a GODKILLER: Bloody Gnosis</div>
                 <div class="card-meta"><span class="status-live">STATUS: DEPLOYED</span> // SHORT FILM</div>

@@ -14,7 +14,7 @@
             --highlight: #ffffff;
             --glitch-color: #ff0055;
             --green-matrix: #00ff00;
-            --cyan-era: #00ffff; /* Added for New Era */
+            --cyan-era: #00ffff;
         }
         
         body {
@@ -121,14 +121,14 @@
             letter-spacing: 1px;
         }
 
-        /* UPDATED: Supports Video Logo */
+        /* ARTIST LOGO (VIDEO) */
         .artist-logo-mini {
             width: 100%;
             max-width: 280px;
             height: auto;
             display: block;
-            margin-bottom: 20px;
-            filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.4)); /* Cyan Glow */
+            margin-bottom: 10px;
+            filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.4));
         }
 
         .action-row {
@@ -158,19 +158,42 @@
             border-color: var(--glitch-color);
             color: #000;
         }
-        
-        .btn-buy {
-            border-color: var(--glitch-color);
-            color: var(--glitch-color);
+
+        /* KYS BUTTON IMAGE */
+        .kys-btn {
+            display: block; width: 100%; border: 1px solid var(--cyan-era); 
+            margin-bottom: 10px; transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0,255,255,0.2);
         }
+        .kys-btn:hover { box-shadow: 0 0 20px var(--cyan-era); border-color: #fff; }
+        .kys-btn img { width: 100%; display: block; }
 
         .card-meta {
             font-size: 0.75rem;
             color: #888;
             font-family: 'Courier New', monospace;
+            margin-bottom: 5px;
         }
 
         .status-live { color: var(--cyan-era); text-shadow: 0 0 5px var(--cyan-era); }
+
+        /* HERO BLOCK FOR COUNTDOWN */
+        .hero-block { 
+            position: relative; margin: 15px 0; border: 1px solid #333; 
+            background: #000; overflow: hidden;
+        }
+        .hero-image { width: 100%; display: block; opacity: 0.8; }
+        
+        #countdown-timer {
+            position: absolute; bottom: 5px; left: 0; width: 100%;
+            text-align: center;
+            font-size: clamp(1.2rem, 4vw, 2rem); 
+            color: #00ffff; font-weight: 900;
+            letter-spacing: -1px; text-shadow: 2px 2px 0px #ff0055;
+            font-family: 'Arial Black', sans-serif;
+            background: rgba(0,0,0,0.5);
+            padding: 5px 0;
+        }
         
         /* STANDARD 16:9 VIDEO */
         .video-container {
@@ -180,21 +203,16 @@
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
         }
 
-        /* FIXED VERTICAL VIDEO FOR TEASER - FIXED DIMENSIONS */
+        /* VERTICAL VIDEO */
         .video-container-vertical {
             position: relative;
-            width: 225px;      /* Hardcoded Width */
-            height: 400px;     /* Hardcoded Height (Approx 9:16) */
-            margin: 0 auto 15px auto; /* Centers the box */
+            width: 225px;      
+            height: 400px;     
+            margin: 0 auto 15px auto;
             border: 1px solid #333;
             background: #000;
         }
-        
-        .video-container-vertical iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+        .video-container-vertical iframe { width: 100%; height: 100%; border: none; }
 
         .contact-form input, .contact-form textarea {
             width: 100%; background: #111; border: 1px solid #333; color: #fff; padding: 15px; margin-bottom: 15px; font-family: 'Courier New', monospace; box-sizing: border-box;
@@ -238,19 +256,22 @@
                     </video>
                 </a>
                 
+                <div class="hero-block">
+                    <img src="transactional_date.png" alt="03.13.26" class="hero-image">
+                    <div id="countdown-timer">00:00:00:00</div>
+                </div>
+                
                 <div class="card-meta">
                     <span class="status-live">STATUS: TRANSACTIONAL // ERA_02</span>
                 </div>
-                <div class="card-meta" style="margin-top:5px; font-size:0.65rem;">
-                    NEXT BREACH: 03.13.26 // PROJECT: TransActionAl
-                </div>
+                
+                <a href="https://payhip.com/b/4TUNw" class="kys-btn">
+                    <img src="kys.png" alt="KEEP YOUR SOVEREIGNTY">
+                </a>
 
                 <div class="action-row">
-                    <a href="https://payhip.com/b/MYNlE" class="btn-action btn-buy">
-                        $6.66 | ARCHIVE V6.66
-                    </a>
                     <a href="https://thetrophyhoe.com/sacred-spoils" class="btn-action">
-                        SACRED SPOILS | STORE
+                        SACRED SPOILS
                     </a>
                     <a href="https://thetrophyhoe.com" class="btn-action" style="border-color:#444;">
                         VISIT TERMINAL
@@ -328,6 +349,22 @@
         </div>
         <div>© 2026 GLITCHED RECORDS. ALL RIGHTS RESERVED.</div>
     </footer>
+
+    <script>
+        const targetDate = new Date("March 13, 2026 00:00:00").getTime();
+        setInterval(() => {
+            const now = new Date().getTime();
+            const d = Math.floor((targetDate - now) / (1000 * 60 * 60 * 24));
+            const h = Math.floor(((targetDate - now) % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor(((targetDate - now) % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor(((targetDate - now) % (1000 * 60)) / 1000);
+            
+            const timerEl = document.getElementById('countdown-timer');
+            if(timerEl) {
+                timerEl.innerText = `${d.toString().padStart(2,'0')}:${h.toString().padStart(2,'0')}:${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>

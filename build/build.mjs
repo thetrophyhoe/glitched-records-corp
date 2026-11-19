@@ -125,7 +125,7 @@ const NAV = (current) => `<nav class="universe" aria-label="The Glitched univers
 <li><a href="https://thetrophyhoe.com">${ARTIST}</a></li>
 <li><a href="https://theantichrist.ai">THEA</a></li>
 <li><a href="https://matriarchives.theantichrist.ai">MatriArchives</a></li>
-<li><a href="https://studio.glitchedrecords.com">Sovereign Symptoms studio</a><span class="soon">coming</span></li>
+<li><a href="/studio/"${current === "studio" ? ' aria-current="page"' : ""}>Sovereign Symptoms studio</a><span class="soon">coming</span></li>
 <li><a href="/contact/"${current === "contact" ? ' aria-current="page"' : ""}>Contact</a></li>
 </ul></nav>`;
 
@@ -227,7 +227,7 @@ const nodeHtml = (e) => {
   if (e.status === "M") return `<li class="node st-M lane-story" ${common}><span class="dot" aria-hidden="true"></span><span class="when">TBD</span><span class="card" tabindex="-1" data-focus><span class="k">${LOCK_SVG}Locked · TBD</span><span class="t">${esc(e.title)}</span></span></li>`;
   if (e.status === "N") return `<li class="node st-N lane-story" ${common}><span class="dot" aria-hidden="true"></span><span class="when">Coming next · TBA</span><span class="card" tabindex="-1" data-focus><span class="k">Coming next</span><span class="t">${esc(e.title)}</span></span></li>`;
   if (e.status === "E") return `<li class="node end lane-story" id="double-void" ${common}><span class="dot" aria-hidden="true"></span><span class="when">The end point</span><span class="card" tabindex="-1" data-focus><span class="k">End</span><span class="t">${esc(e.title)}</span></span></li>`;
-  if (e.status === "B") return `<li class="node branch lane-story" id="studio" ${common}><span class="dot" aria-hidden="true"></span><span class="when">Coming</span><a class="card" href="https://studio.glitchedrecords.com" tabindex="-1" data-focus><img src="/assets/sovereign-symptoms-gold-v1-512.webp" width="64" height="64" alt="Sovereign Symptoms logo"><span class="k">Side branch · coming</span><span class="t">${esc(e.title)}</span></a></li>`;
+  if (e.status === "B") return `<li class="node branch lane-story" id="studio" ${common}><span class="dot" aria-hidden="true"></span><span class="when">Coming</span><a class="card" href="/studio/" tabindex="-1" data-focus><img src="/assets/sovereign-symptoms-gold-v1-512.webp" width="64" height="64" alt="Sovereign Symptoms logo"><span class="k">Side branch · coming</span><span class="t">${esc(e.title)}</span></a></li>`;
   if (e.status === "K") return `<li class="node glitch lane-episode" id="kiera-glitch" ${common}><span class="dot" aria-hidden="true"></span><span class="when">${esc(whenLabel(e))} · Episode 7</span><button type="button" class="card" id="kiera-btn" tabindex="-1" data-focus aria-haspopup="dialog"><span class="k glitchtext">Signal lost</span><span class="t">${esc(e.title)}</span></button></li>`;
   const cls = `node st-${e.status} lane-${ln}`;
   return `<li class="${cls}" id="${esc(e.id)}" ${common}><span class="dot" aria-hidden="true"></span><span class="when">${esc(whenLabel(e))}</span><a class="card" href="${slugOf(e)}" tabindex="-1" data-focus><span class="k">${esc(kindLabel(e))}</span><span class="t">${esc(e.title)}</span><span class="sr">, ${esc(whenLabel(e))}</span></a></li>`;
@@ -246,7 +246,8 @@ const items=()=>[...list.querySelectorAll('.node:not([hidden]) [data-focus]')];
 const fmt=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit'});
 const today=fmt.format(new Date()),t=document.getElementById('today');
 const nextNode=[...list.querySelectorAll('.node[data-date]')].find(n=>n.dataset.date>today);
-if(nextNode&&t.nextElementSibling!==nextNode){list.insertBefore(t,nextNode);const d=new Date(today+'T12:00:00');const lbl=d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});t.querySelector('.when').textContent=lbl;t.querySelector('.sr').textContent=', '+lbl;}
+if(nextNode&&t.nextElementSibling!==nextNode)list.insertBefore(t,nextNode);
+{const d=new Date(today+'T12:00:00');const lbl=d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});t.querySelector('.when').textContent=lbl;t.querySelector('.sr').textContent=', '+lbl;}
 function center(el,smooth){
   const b=smooth&&!reduce.matches?'smooth':'auto';
   if(vertical()){const r=el.getBoundingClientRect();window.scrollTo({top:window.scrollY+r.top-innerHeight/2+r.height/2,behavior:b});}
@@ -337,6 +338,20 @@ write("contact/index.html", head({ title: "Contact · Glitched Records", desc: "
 </form>
 <p class="meta" style="margin-top:24px">Prefer email? <a href="mailto:${CONTACT}">${CONTACT}</a></p>
 </main>${FOOTER}<script>${contactJs}</script></body></html>`);
+
+// ---------- studio (incoming) ----------
+write("studio/index.html", head({ title: "Sovereign Symptoms studio · Glitched Records", desc: "Sovereign Symptoms, the Glitched Records studio for websites, branding, Godkiller Graphics video work and ghostwriting. Opening soon.", canonical: `${SITE}/studio/`, jsonld: [ORG] }).replace("</title>", "</title><meta name=\"robots\" content=\"noindex, follow\">") + `<body>${HEADER("studio")}
+<main id="main" class="wrap"><p class="crumbs"><a href="/">Timeline</a> / Studio</p>
+<img src="/assets/sovereign-symptoms-gold-v1-512.webp" width="160" height="160" alt="Sovereign Symptoms logo" style="border-radius:16px;margin:12px 0">
+<h1>Sovereign Symptoms <span class="soon" style="font-size:14px;vertical-align:middle">incoming</span></h1>
+<p class="meta">The studio branch of the Glitched universe is still compiling. Websites, branding, Godkiller Graphics video work and ghostwriting, with prices listed as "Starting at" when the doors open.</p>
+<p>Want to get on the list or start a project now?</p>
+<p><a class="btn" href="/contact/">Send a message</a><a class="btn" href="/">Back to the timeline</a></p>
+</main>${FOOTER}</body></html>`);
+
+// ---------- legacy root files from the old site ----------
+// Old image URLs redirect to compressed copies (vercel.json). The old intro video is copied unchanged.
+for (const f of ["teralogo.mp4"]) if (fs.existsSync(path.join(ROOT, f))) fs.copyFileSync(path.join(ROOT, f), path.join(OUT, f));
 
 // ---------- sitemap + robots ----------
 const urls = [`${SITE}/`, `${SITE}/contact/`, ...pages.map((e) => SITE + slugOf(e))];

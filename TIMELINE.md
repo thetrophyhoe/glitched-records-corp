@@ -8,3 +8,7 @@ Static site generated at deploy time. No dependencies.
 - `api/contact.js`: contact form, sends with Resend. Needs env vars `RESEND_API_KEY`, `CONTACT_TO`, `CONTACT_FROM` and a verified `send.glitchedrecords.com` domain in Resend.
 
 Local: `node build/build.mjs && python3 -m http.server -d dist 8080`
+
+Go-live notes (Nov 19, 2026):
+- `/studio/` is an "incoming" stub (noindex) until studio.glitchedrecords.com is built; nav and the timeline branch node point there.
+- Old root images from the countdown site 301 to compressed webp copies in `/assets/legacy-*` (see `vercel.json` redirects); `/hero-bg.jpg` and `/glitched-logo.jpg` go to the `/amenti/` copies; `teralogo.mp4` is copied as-is.

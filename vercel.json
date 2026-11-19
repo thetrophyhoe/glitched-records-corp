@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo no-install",
+  "buildCommand": "node build/build.mjs",
+  "outputDirectory": "dist",
+  "trailingSlash": true,
+  "functions": { "api/contact.js": { "maxDuration": 10 } }
+}

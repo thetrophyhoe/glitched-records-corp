@@ -50,6 +50,11 @@
       "source": "/glitched-logo.jpg",
       "destination": "/amenti/glitched-logo.jpg",
       "permanent": true
+    },
+    {
+      "source": "/timeline/2026-06-01-matriarch-codes-completes-all-17-texts/",
+      "destination": "/timeline/2026-06-01-matriarchives-completes-all-17-texts/",
+      "permanent": true
     }
   ]
 }

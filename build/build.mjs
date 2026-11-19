@@ -144,15 +144,20 @@ const HEADER = (current) => `<a class="skip" href="#main">Skip to content</a>
 <header class="site"><a class="brand" href="/"><img src="/assets/gr-mark-128.webp" width="44" height="44" alt=""><span>Glitched Records</span></a>${NAV(current)}</header>`;
 const FOOTER = `<footer class="site"><span>© 2026 Glitched Records · Est. 2025</span><a href="/contact/">Contact</a><span>#STAYGLITCHED</span></footer>`;
 
-const ORG = { "@context": "https://schema.org", "@type": "Organization", "@id": `${SITE}/#org`, name: "Glitched Records", url: `${SITE}/`, logo: `${SITE}/assets/gr-mark-256.webp`, foundingDate: "2025", founder: { "@type": "Person", name: "Indigo Holliday" }, email: CONTACT, sameAs: ["https://www.youtube.com/@TrophyHoe", "https://thetrophyhoe.com", "https://theantichrist.ai"] };
-const GROUP = { "@type": "MusicGroup", name: ARTIST, url: "https://thetrophyhoe.com" };
+// Shared entity ids so Google can join the label, the artist and Indigo across glitchedrecords.com and thetrophyhoe.com.
+const PERSON = { "@type": "Person", "@id": "https://thetrophyhoe.com/#indigo-holliday", name: "Indigo Holliday" };
+const GROUP_ID = "https://thetrophyhoe.com/#artist";
+const ORG = { "@context": "https://schema.org", "@type": "Organization", "@id": `${SITE}/#org`, name: "Glitched Records", url: `${SITE}/`, logo: `${SITE}/assets/gr-mark-256.webp`, foundingDate: "2025", founder: PERSON, email: CONTACT, department: { "@type": "Organization", "@id": `${SITE}/#sovereign-symptoms`, name: "Sovereign Symptoms", description: "The Glitched Records studio for websites, branding, Godkiller Graphics video work and ghostwriting.", logo: `${SITE}/assets/sovereign-symptoms-gold-v1-512.webp`, parentOrganization: { "@id": `${SITE}/#org` } }, sameAs: ["https://www.youtube.com/@TrophyHoe", "https://thetrophyhoe.com/", "https://www.theantichrist.ai/"] };
+const GROUP = { "@type": "MusicGroup", "@id": GROUP_ID, name: ARTIST, url: "https://thetrophyhoe.com/" };
+// Full artist entity, emitted once on the home page; event pages reference it by @id.
+const GROUP_FULL = { "@context": "https://schema.org", ...GROUP, founder: { "@id": PERSON["@id"] }, member: PERSON, sameAs: ["https://www.youtube.com/@TrophyHoe", "https://open.spotify.com/artist/0Wt716RDrIkaGfNlSN8IFj"] };
 
 // ---------- event schema ----------
 function schemaFor(e) {
   const url = SITE + slugOf(e);
   const yt = ytId(e.link);
   const base = { "@context": "https://schema.org", name: e.title, url };
-  if (e.kind === "Album" || e.kind === "EP") return { ...base, "@type": "MusicAlbum", byArtist: GROUP, datePublished: e.date, albumReleaseType: e.kind === "EP" ? "https://schema.org/EPRelease" : "https://schema.org/AlbumRelease", recordLabel: e.date >= "2025-06-19" ? { "@type": "Organization", name: "Glitched Records" } : undefined, sameAs: e.link || undefined };
+  if (e.kind === "Album" || e.kind === "EP") return { ...base, "@type": "MusicAlbum", byArtist: GROUP, datePublished: e.date, albumReleaseType: e.kind === "EP" ? "https://schema.org/EPRelease" : "https://schema.org/AlbumRelease", recordLabel: e.date >= "2025-06-19" ? { "@type": "Organization", "@id": `${SITE}/#org`, name: "Glitched Records" } : undefined, sameAs: e.link || undefined };
   if (e.kind === "Single") return { ...base, "@type": "MusicRecording", byArtist: GROUP, datePublished: e.date, sameAs: e.link || undefined };
   if (yt) {
     const video = { "@type": "VideoObject", name: e.title, description: `${kindLabel(e)} by ${ARTIST}, published ${fmtDate(e.date)}.`, uploadDate: e.date, thumbnailUrl: `https://i.ytimg.com/vi/${yt}/hqdefault.jpg`, embedUrl: `https://www.youtube-nocookie.com/embed/${yt}`, contentUrl: e.link, publisher: { "@id": `${SITE}/#org` } };
@@ -173,7 +178,7 @@ pages.forEach((e, i) => {
   const yt = ytId(e.link);
   const canonical = SITE + slugOf(e);
   const isMusic = RELEASE.includes(e.kind);
-  const desc = e.blurb || `${kindLabel(e)}${isMusic || yt ? ` by ${ARTIST}` : ""}${e.date ? `, ${fmtDate(e.date)}` : ""}. On the Glitched Records timeline.`;
+  const desc = e.blurb || `${e.title} — ${kindLabel(e)}${isMusic || yt ? ` by ${ARTIST}` : ""}${e.date ? `, ${fmtDate(e.date)}` : ""}. On the Glitched Records timeline.`;
   const body = `<body>${HEADER("event")}
 <main id="main" class="wrap ev">
 <p class="crumbs"><a href="/?at=${encodeURIComponent(e.id)}">← Back to the timeline</a></p>
@@ -294,7 +299,7 @@ dlg.addEventListener('close',()=>btn.focus());
 })();`;
 
 const desc = `The Glitched Records universe as one timeline: every release by ${ARTIST}, music videos, episodes of Breaking Buzz and The Wires of Amenti, and what comes next.`;
-const home = head({ title: "Glitched Records · The timeline", desc, canonical: `${SITE}/`, jsonld: [ORG, website, itemList] }) + `<body>${HEADER("home")}
+const home = head({ title: "Glitched Records · The timeline", desc, canonical: `${SITE}/`, jsonld: [ORG, GROUP_FULL, website, itemList] }) + `<body>${HEADER("home")}
 <main id="main">
 <section class="hero"><h1>The Glitched timeline</h1><p>Everything in one line, opened on today. Scroll back through every drop by ${ARTIST}, or look ahead. Latest: <a href="/timeline/${pages.filter((e) => RELEASE.includes(e.kind)).at(-1).id}/">${esc(pages.filter((e) => RELEASE.includes(e.kind)).at(-1).title)}</a>. Bloody Gnosis: out now. The animated series: coming.</p></section>
 <div class="bar" role="group" aria-label="Show lanes">

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo no-install",
+  "buildCommand": "node build/build.mjs",
+  "outputDirectory": "dist",
+  "trailingSlash": true,
+  "functions": {
+    "api/contact.js": {
+      "maxDuration": 10
+    }
+  },
+  "redirects": [
+    {
+      "source": "/glitched_records_seal.png",
+      "destination": "/assets/legacy-glitched-records-seal-1200.webp",
+      "permanent": true
+    },
+    {
+      "source": "/kys.png",
+      "destination": "/assets/legacy-kys-1200.webp",
+      "permanent": true
+    },
+    {
+      "source": "/transactional_date.png",
+      "destination": "/assets/legacy-transactional-date-1200.webp",
+      "permanent": true
+    },
+    {
+      "source": "/logo_era_antichrist.png",
+      "destination": "/assets/legacy-logo-era-antichrist-1200.webp",
+      "permanent": true
+    },
+    {
+      "source": "/logo_script_white.png",
+      "destination": "/assets/legacy-logo-script-white-1200.webp",
+      "permanent": true
+    },
+    {
+      "source": "/logo_primary_neon.png",
+      "destination": "/assets/legacy-logo-primary-neon-1024.webp",
+      "permanent": true
+    },
+    {
+      "source": "/hero-bg.jpg",
+      "destination": "/amenti/hero-bg.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/glitched-logo.jpg",
+      "destination": "/amenti/glitched-logo.jpg",
+      "permanent": true
+    }
+  ]
+}

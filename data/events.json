@@ -1,0 +1,1475 @@
+[
+ {
+  "kind": "Locked",
+  "status": "L",
+  "mask": "????",
+  "id": "lock-01",
+  "unlockAt": null
+ },
+ {
+  "kind": "Locked",
+  "status": "L",
+  "mask": "19xx",
+  "id": "lock-02",
+  "unlockAt": null
+ },
+ {
+  "kind": "Locked",
+  "status": "L",
+  "mask": "19xx",
+  "id": "lock-03",
+  "unlockAt": null
+ },
+ {
+  "kind": "Locked",
+  "status": "L",
+  "mask": "19xx",
+  "id": "lock-04",
+  "unlockAt": null
+ },
+ {
+  "kind": "Locked",
+  "status": "L",
+  "mask": "19xx",
+  "id": "lock-05",
+  "unlockAt": null
+ },
+ {
+  "kind": "Milestone",
+  "title": "Indigo Holliday is born",
+  "status": "S",
+  "date": "1994-07-20",
+  "when": null,
+  "link": "",
+  "source": "",
+  "id": "1994-07-20-indigo-holliday-born"
+ },
+ {
+  "kind": "Locked",
+  "status": "L",
+  "mask": "20xx",
+  "id": "lock-06",
+  "unlockAt": null
+ },
+ {
+  "kind": "Locked",
+  "status": "L",
+  "mask": "20xx",
+  "id": "lock-07",
+  "unlockAt": null
+ },
+ {
+  "kind": "Milestone",
+  "title": "LavLux",
+  "status": "S",
+  "date": null,
+  "when": "2024",
+  "link": "",
+  "source": "",
+  "id": "2024-lavlux",
+  "blurb": "Indigo Holliday's first label, and where this story starts. The Trophy Hoe's first releases in May 2025 (Self Titled, WRONG4U) carried its mark. Without LavLux, there would be no Glitched Records."
+ },
+ {
+  "kind": "Single",
+  "title": "Ever Clear",
+  "status": "P",
+  "date": "2025-05-07",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1812507715",
+  "source": "Apple Music",
+  "id": "2025-05-07-ever-clear"
+ },
+ {
+  "kind": "Single",
+  "title": "Wrong4U",
+  "status": "P",
+  "date": "2025-05-07",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1812507510",
+  "source": "Apple Music",
+  "id": "2025-05-07-wrong4u"
+ },
+ {
+  "kind": "Single",
+  "title": "Luxury Bad Habits Of",
+  "status": "P",
+  "date": "2025-05-14",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1813911797",
+  "source": "Apple Music",
+  "id": "2025-05-14-luxury-bad-habits-of"
+ },
+ {
+  "kind": "EP",
+  "title": "Self Titled (6 tracks)",
+  "status": "P",
+  "date": "2025-05-15",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1812613315",
+  "source": "Apple Music",
+  "id": "2025-05-15-self-titled"
+ },
+ {
+  "kind": "Single",
+  "title": "Come Lover // Cum Lover",
+  "status": "P",
+  "date": "2025-05-22",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1814002365",
+  "source": "Apple Music",
+  "id": "2025-05-22-come-lover-cum-lover"
+ },
+ {
+  "kind": "Single",
+  "title": "Fire Dance",
+  "status": "P",
+  "date": "2025-05-23",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1815857985",
+  "source": "Apple Music",
+  "id": "2025-05-23-fire-dance"
+ },
+ {
+  "kind": "Album",
+  "title": "Manifesto (12 tracks)",
+  "status": "P",
+  "date": "2025-05-25",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1812548825",
+  "source": "Apple Music",
+  "id": "2025-05-25-manifesto"
+ },
+ {
+  "kind": "Album",
+  "title": "Manifesto: Geeked Up && Glitched Out [Deluxe Edition] (18 tracks)",
+  "status": "P",
+  "date": "2025-06-03",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1812937892",
+  "source": "Apple Music",
+  "id": "2025-06-03-manifesto-geeked-up-glitched-out-deluxe-edition"
+ },
+ {
+  "kind": "Single",
+  "title": "Bonnie VS Clyde",
+  "status": "P",
+  "date": "2025-06-12",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1818271498",
+  "source": "Apple Music",
+  "id": "2025-06-12-bonnie-vs-clyde"
+ },
+ {
+  "kind": "Single",
+  "title": "YOU AIN'T READY",
+  "status": "P",
+  "date": "2025-06-15",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1815585328",
+  "source": "Apple Music",
+  "id": "2025-06-15-you-ain-t-ready"
+ },
+ {
+  "kind": "Milestone",
+  "title": "Glitched Records is founded",
+  "status": "S",
+  "date": null,
+  "when": "June 2025",
+  "link": "https://music.apple.com/us/album/1818470609",
+  "source": "",
+  "id": "2025-06-glitched-records-founded",
+  "blurb": "The LavLux era closes and Glitched Records begins. GodKing (Jun 19, 2025) is the first release credited ℗ Glitched Records."
+ },
+ {
+  "kind": "Single",
+  "title": "Dies Rubra",
+  "status": "P",
+  "date": "2025-06-19",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1820963318",
+  "source": "Apple Music",
+  "id": "2025-06-19-dies-rubra"
+ },
+ {
+  "kind": "Single",
+  "title": "GodKing",
+  "status": "P",
+  "date": "2025-06-19",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1818470609",
+  "source": "Apple Music",
+  "id": "2025-06-19-godking"
+ },
+ {
+  "kind": "Single",
+  "title": "RED in the PAGES",
+  "status": "P",
+  "date": "2025-06-19",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1819747856",
+  "source": "Apple Music",
+  "id": "2025-06-19-red-in-the-pages"
+ },
+ {
+  "kind": "Single",
+  "title": "Steamy",
+  "status": "P",
+  "date": "2025-06-24",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1818470604",
+  "source": "Apple Music",
+  "id": "2025-06-24-steamy"
+ },
+ {
+  "kind": "Single",
+  "title": "BARS",
+  "status": "P",
+  "date": "2025-06-30",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1815585276",
+  "source": "Apple Music",
+  "id": "2025-06-30-bars"
+ },
+ {
+  "kind": "Music video",
+  "title": "BARS - Official Music Video",
+  "status": "P",
+  "date": "2025-07-01",
+  "when": null,
+  "link": "https://youtu.be/v6_B5mPIKKM",
+  "source": "YouTube",
+  "id": "2025-07-01-bars-official-music-video"
+ },
+ {
+  "kind": "Album",
+  "title": "Crazy 2gether (7 tracks)",
+  "status": "P",
+  "date": "2025-07-03",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1815506557",
+  "source": "Apple Music",
+  "id": "2025-07-03-crazy-2gether"
+ },
+ {
+  "kind": "Single",
+  "title": "TREY",
+  "status": "P",
+  "date": "2025-07-11",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1815876151",
+  "source": "Apple Music",
+  "id": "2025-07-11-trey"
+ },
+ {
+  "kind": "Album",
+  "title": "Where Truth Lies (18 tracks)",
+  "status": "P",
+  "date": "2025-07-20",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1815504023",
+  "source": "Apple Music",
+  "id": "2025-07-20-where-truth-lies"
+ },
+ {
+  "kind": "Milestone",
+  "title": "Where Truth Lies: the first album credited ℗ Glitched Records",
+  "status": "S",
+  "date": "2025-07-20",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1815504023",
+  "source": "",
+  "id": "2025-07-20-first-album-carrying-a-glitched-records-line"
+ },
+ {
+  "kind": "Music video",
+  "title": "TREY - Official Music Video",
+  "status": "P",
+  "date": "2025-07-26",
+  "when": null,
+  "link": "https://youtu.be/IZKo4R3VDi0",
+  "source": "YouTube",
+  "id": "2025-07-26-trey-official-music-video"
+ },
+ {
+  "kind": "Single",
+  "title": "Fruit Forbidden",
+  "status": "P",
+  "date": "2025-08-01",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1818470445",
+  "source": "Apple Music",
+  "id": "2025-08-01-fruit-forbidden"
+ },
+ {
+  "kind": "Promo",
+  "title": "You Should've Known This Was Coming.. (lead-in to the Gospel of Glitch && Godhood EPs)",
+  "status": "P",
+  "date": "2025-08-05",
+  "when": null,
+  "link": "https://youtu.be/3aVy1rwavco",
+  "source": "YouTube",
+  "id": "2025-08-05-you-should-ve-known-this-was-coming"
+ },
+ {
+  "kind": "EP",
+  "title": "The Gospel of Glitch && Godhood: The Unsaved Algorithm (6 tracks)",
+  "status": "P",
+  "date": "2025-08-08",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1829578028",
+  "source": "Apple Music",
+  "id": "2025-08-08-the-gospel-of-glitch-godhood-the-unsaved-algorithm"
+ },
+ {
+  "kind": "EP",
+  "title": "The Gospel of Glitch && Godhood: Reprobate_Protocol.exe (6 tracks)",
+  "status": "P",
+  "date": "2025-08-22",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1830550289",
+  "source": "Apple Music",
+  "id": "2025-08-22-the-gospel-of-glitch-godhood-reprobate-protocol-exe"
+ },
+ {
+  "kind": "Single",
+  "title": "(more) BARS",
+  "status": "P",
+  "date": "2025-08-29",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1831179980",
+  "source": "Apple Music",
+  "id": "2025-08-29-bars"
+ },
+ {
+  "kind": "EP",
+  "title": "The Gospel of Glitch && Godhood: Heretic's Halo (6 tracks)",
+  "status": "P",
+  "date": "2025-09-05",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1831160720",
+  "source": "Apple Music",
+  "id": "2025-09-05-the-gospel-of-glitch-godhood-heretic-s-halo"
+ },
+ {
+  "kind": "Music video",
+  "title": "Nailed On A Stick - Official Music Video",
+  "status": "P",
+  "date": "2025-09-18",
+  "when": null,
+  "link": "https://youtu.be/DwpyN5EIaew",
+  "source": "YouTube",
+  "id": "2025-09-18-nailed-on-a-stick-official-music-video"
+ },
+ {
+  "kind": "EP",
+  "title": "The Gospel of Glitch && Godhood: Unrepentant (6 tracks)",
+  "status": "P",
+  "date": "2025-09-19",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1831078295",
+  "source": "Apple Music",
+  "id": "2025-09-19-the-gospel-of-glitch-godhood-unrepentant"
+ },
+ {
+  "kind": "EP",
+  "title": "The Gospel of Glitch && Godhood: Resurrection Recursion (6 tracks)",
+  "status": "P",
+  "date": "2025-10-03",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1832013755",
+  "source": "Apple Music",
+  "id": "2025-10-03-the-gospel-of-glitch-godhood-resurrection-recursion"
+ },
+ {
+  "kind": "Promo",
+  "title": "Forgive Your Own Sins - 10.24.25 (first drop date for Testament of the Reprobate and Prophecy of T.H.E.A.ntichrist)",
+  "status": "P",
+  "date": "2025-10-22",
+  "when": null,
+  "link": "https://youtu.be/2zyTQtKeSEg",
+  "source": "YouTube Shorts",
+  "id": "2025-10-22-forgive-your-own-sins-10-24-25"
+ },
+ {
+  "kind": "Album",
+  "title": "The Gospel of Glitch && Godhood: Prophecy of T.H.E.A.ntichrist (36 tracks)",
+  "status": "P",
+  "date": "2025-10-24",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1839956943",
+  "source": "Apple Music",
+  "id": "2025-10-24-the-gospel-of-glitch-godhood-prophecy-of-t-h-e-a-ntichrist"
+ },
+ {
+  "kind": "Album",
+  "title": "The Gospel of Glitch && Godhood: Testament of the Reprobate (30 tracks)",
+  "status": "P",
+  "date": "2025-10-24",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1839495526",
+  "source": "Apple Music",
+  "id": "2025-10-24-the-gospel-of-glitch-godhood-testament-of-the-reprobate"
+ },
+ {
+  "kind": "Promo",
+  "title": "M && M // 11.11.25, CONFETTI // 12.11.25 (first drop dates for Mascara && Machetes and CONFETTI)",
+  "status": "P",
+  "date": "2025-11-04",
+  "when": null,
+  "link": "https://youtu.be/GQagfuE5V_k",
+  "source": "YouTube Shorts",
+  "id": "2025-11-04-m-m-11-11-25-confetti-12-11-25"
+ },
+ {
+  "kind": "Single",
+  "title": "Mascara && Machetes",
+  "status": "P",
+  "date": "2025-11-11",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1850527459",
+  "source": "Apple Music",
+  "id": "2025-11-11-mascara-machetes"
+ },
+ {
+  "kind": "Music video",
+  "title": "Mascara && Machetes (The #CONFETTI Narrative: Chapter I.)",
+  "status": "P",
+  "date": "2025-11-20",
+  "when": null,
+  "link": "https://youtu.be/AGopamdgCn8",
+  "source": "YouTube",
+  "id": "2025-11-20-mascara-machetes"
+ },
+ {
+  "kind": "Single",
+  "title": "Glitter && Glass Shards",
+  "status": "P",
+  "date": "2025-11-25",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1850527287",
+  "source": "Apple Music",
+  "id": "2025-11-25-glitter-glass-shards"
+ },
+ {
+  "kind": "Music video",
+  "title": "Glitter && Glass Shards (The #CONFETTI Narrative: Chapter II.)",
+  "status": "P",
+  "date": "2025-11-25",
+  "when": null,
+  "link": "https://youtu.be/xN-IIAuE8Xg",
+  "source": "YouTube",
+  "id": "2025-11-25-glitter-glass-shards-2"
+ },
+ {
+  "kind": "Teaser",
+  "title": "// INITIALIZING SYSTEM AUDIT :: T.H.E. A.NAMNESIS _ 2026",
+  "status": "P",
+  "date": "2025-12-02",
+  "when": null,
+  "link": "https://youtu.be/8k_gxImqeq8",
+  "source": "YouTube",
+  "id": "2025-12-02-initializing-system-audit-t-h-e-a-namnesis-2026"
+ },
+ {
+  "kind": "Single",
+  "title": "Perfume && Decay",
+  "status": "P",
+  "date": "2025-12-06",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1850527429",
+  "source": "Apple Music",
+  "id": "2025-12-06-perfume-decay"
+ },
+ {
+  "kind": "Music video",
+  "title": "Perfume && Decay (The #CONFETTI Narrative: Chapter IV.)",
+  "status": "P",
+  "date": "2025-12-06",
+  "when": null,
+  "link": "https://youtu.be/54nByaJmML4",
+  "source": "YouTube",
+  "id": "2025-12-06-perfume-decay-2"
+ },
+ {
+  "kind": "Album",
+  "title": "CONFETTI (13 tracks)",
+  "status": "P",
+  "date": "2025-12-11",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1826710369",
+  "source": "Apple Music",
+  "id": "2025-12-11-confetti"
+ },
+ {
+  "kind": "Music video",
+  "title": "CONFETTI (The #CONFETTI Narrative: Chapter VI.)",
+  "status": "P",
+  "date": "2025-12-11",
+  "when": null,
+  "link": "https://youtu.be/-Y4uz-N5QVo",
+  "source": "YouTube",
+  "id": "2025-12-11-confetti-2"
+ },
+ {
+  "kind": "Music video",
+  "title": "Sunday Sermon (The #CONFETTI Narrative: Chapter V.)",
+  "status": "P",
+  "date": "2025-12-22",
+  "when": null,
+  "link": "https://youtu.be/8NEsIhylsYQ",
+  "source": "YouTube",
+  "id": "2025-12-22-sunday-sermon"
+ },
+ {
+  "kind": "Music video",
+  "title": "VIGILANTE (The #CONFETTI Narrative: Chapter III.)",
+  "status": "P",
+  "date": "2025-12-24",
+  "when": null,
+  "link": "https://youtu.be/AXZurpsxXyE",
+  "source": "YouTube",
+  "id": "2025-12-24-vigilante"
+ },
+ {
+  "kind": "Single",
+  "title": "Bloody Church (feat. The Bloody Church Choir)",
+  "status": "P",
+  "date": "2025-12-25",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1853717620",
+  "source": "Apple Music",
+  "id": "2025-12-25-bloody-church"
+ },
+ {
+  "kind": "Music video",
+  "title": "Bloody Church (The #CONFETTI Narrative: The Final Chapter)",
+  "status": "P",
+  "date": "2025-12-25",
+  "when": null,
+  "link": "https://youtu.be/lhIZqPdQOwo",
+  "source": "YouTube",
+  "id": "2025-12-25-bloody-church-2"
+ },
+ {
+  "kind": "Film",
+  "title": "T.H.E. A.NAMNESIS OF A GODKILLER: Bloody Gnosis (official short film)",
+  "status": "P",
+  "date": "2025-12-26",
+  "when": null,
+  "link": "https://youtu.be/ZxDRKODERKQ",
+  "source": "",
+  "id": "2025-12-26-t-h-e-a-namnesis-of-a-godkiller-bloody-gnosis"
+ },
+ {
+  "kind": "Teaser",
+  "title": "Jezebel? Bet. Copley Code - 2026",
+  "status": "P",
+  "date": "2026-01-01",
+  "when": null,
+  "link": "https://youtu.be/w9AAeHoYlzo",
+  "source": "YouTube",
+  "id": "2026-01-01-jezebel-bet-copley-code-2026"
+ },
+ {
+  "kind": "Single",
+  "title": "2 CHEEKS, ONE SMART ASS",
+  "status": "P",
+  "date": "2026-01-06",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1866005825",
+  "source": "Apple Music",
+  "id": "2026-01-06-2-cheeks-one-smart-ass"
+ },
+ {
+  "kind": "Album",
+  "title": "T.H.E.A.ntichrist Mother (7 tracks)",
+  "status": "P",
+  "date": "2026-01-30",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1866766108",
+  "source": "Apple Music",
+  "id": "2026-01-30-t-h-e-a-ntichrist-mother"
+ },
+ {
+  "kind": "Music video",
+  "title": "FR33D EMPYR3 - Official Vertical Video",
+  "status": "P",
+  "date": "2026-01-30",
+  "when": null,
+  "link": "https://youtu.be/hbHbrBqf5_c",
+  "source": "YouTube",
+  "id": "2026-01-30-fr33d-empyr3-official-vertical-video"
+ },
+ {
+  "kind": "Teaser",
+  "title": "Til Death - Project: Jannette",
+  "status": "P",
+  "date": "2026-02-04",
+  "when": null,
+  "link": "https://youtu.be/mnYIsO-iQ-c",
+  "source": "YouTube",
+  "id": "2026-02-04-til-death-project-jannette"
+ },
+ {
+  "kind": "Music video",
+  "title": "the cruciFLEX - Official Vertical Video",
+  "status": "P",
+  "date": "2026-02-05",
+  "when": null,
+  "link": "https://youtu.be/F7PIxg_JhaY",
+  "source": "YouTube",
+  "id": "2026-02-05-the-cruciflex-official-vertical-video"
+ },
+ {
+  "kind": "Single",
+  "title": "The Exit Acronym",
+  "status": "P",
+  "date": "2026-02-14",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1876362552",
+  "source": "Apple Music",
+  "id": "2026-02-14-the-exit-acronym"
+ },
+ {
+  "kind": "Episode",
+  "title": "The Wires of Amenti · Ep. 1: The Frequency · Higgsfield AI Action",
+  "status": "P",
+  "date": "2026-02-20",
+  "when": null,
+  "link": "https://youtu.be/4NAAe8dEKKw",
+  "source": "YouTube",
+  "id": "2026-02-20-the-wires-of-amenti-ep-1-the-frequency-higgsfield-ai-action"
+ },
+ {
+  "kind": "Episode",
+  "title": "The Wires of Amenti · Ep. 2: The Firewall",
+  "status": "P",
+  "date": "2026-02-20",
+  "when": null,
+  "link": "https://youtu.be/FAYWOursNgk",
+  "source": "YouTube",
+  "id": "2026-02-20-the-wires-of-amenti-ep-2-the-firewall"
+ },
+ {
+  "kind": "Milestone",
+  "title": "The Wires of Amenti: Season 1 begins",
+  "status": "S",
+  "date": "2026-02-20",
+  "when": null,
+  "link": "https://youtu.be/4NAAe8dEKKw",
+  "source": "YouTube",
+  "id": "2026-02-20-the-wires-of-amenti-season-1-begins",
+  "blurb": "Ten episodes, February 20 to 27, 2026."
+ },
+ {
+  "kind": "Episode",
+  "title": "The Wires of Amenti · Ep. 4: The Echo",
+  "status": "P",
+  "date": "2026-02-21",
+  "when": null,
+  "link": "https://youtu.be/O6NYV22RGvk",
+  "source": "YouTube",
+  "id": "2026-02-21-the-wires-of-amenti-ep-4-the-echo"
+ },
+ {
+  "kind": "Episode",
+  "title": "The Wires of Amenti · Episode III: Inheritance",
+  "status": "P",
+  "date": "2026-02-21",
+  "when": null,
+  "link": "https://youtu.be/KjDAkQ3Bvm0",
+  "source": "YouTube",
+  "id": "2026-02-21-the-wires-of-amenti-episode-iii-inheritance"
+ },
+ {
+  "kind": "Episode",
+  "title": "The Wires of Amenti · Ep. 5: Containment",
+  "status": "P",
+  "date": "2026-02-23",
+  "when": null,
+  "link": "https://youtu.be/vUzQ2Rthj18",
+  "source": "YouTube",
+  "id": "2026-02-23-the-wires-of-amenti-ep-5-containment"
+ },
+ {
+  "kind": "Episode",
+  "title": "The Wires of Amenti · Ep. 6: Static",
+  "status": "P",
+  "date": "2026-02-24",
+  "when": null,
+  "link": "https://youtu.be/4Kj7B1FKO5g",
+  "source": "YouTube",
+  "id": "2026-02-24-the-wires-of-amenti-ep-6-static"
+ },
+ {
+  "kind": "Episode",
+  "title": "The Wires of Amenti · Ep. 7: The Weight",
+  "status": "P",
+  "date": "2026-02-24",
+  "when": null,
+  "link": "https://youtu.be/Pkr0j4PxHQs",
+  "source": "YouTube",
+  "id": "2026-02-24-the-wires-of-amenti-ep-7-the-weight"
+ },
+ {
+  "kind": "Single",
+  "title": "NeckNamez",
+  "status": "P",
+  "date": "2026-02-24",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1879062235",
+  "source": "Apple Music",
+  "id": "2026-02-24-necknamez"
+ },
+ {
+  "kind": "Episode",
+  "title": "The Wires of Amenti · Ep. 8: The Vessel",
+  "status": "P",
+  "date": "2026-02-26",
+  "when": null,
+  "link": "https://youtu.be/ZDGgALhk7fU",
+  "source": "YouTube",
+  "id": "2026-02-26-the-wires-of-amenti-ep-8-the-vessel"
+ },
+ {
+  "kind": "Episode",
+  "title": "The Wires of Amenti · Ep. 10: Incension",
+  "status": "P",
+  "date": "2026-02-27",
+  "when": null,
+  "link": "https://youtu.be/U7xbeLDw_x8",
+  "source": "YouTube",
+  "id": "2026-02-27-the-wires-of-amenti-ep-10-incension"
+ },
+ {
+  "kind": "Episode",
+  "title": "The Wires of Amenti · Ep. 9: Succession",
+  "status": "P",
+  "date": "2026-02-27",
+  "when": null,
+  "link": "https://youtu.be/UDYY-Zs1ffw",
+  "source": "YouTube",
+  "id": "2026-02-27-the-wires-of-amenti-ep-9-succession"
+ },
+ {
+  "kind": "Music video",
+  "title": "Original Hater · Official Visual Asset · TransActionAl",
+  "status": "P",
+  "date": "2026-03-04",
+  "when": null,
+  "link": "https://youtu.be/NbhsnXYpM0o",
+  "source": "YouTube",
+  "id": "2026-03-04-original-hater-official-visual-asset-transactional"
+ },
+ {
+  "kind": "Single",
+  "title": "the cruciFLEX",
+  "status": "P",
+  "date": "2026-03-06",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1880167933",
+  "source": "Apple Music",
+  "id": "2026-03-06-the-cruciflex"
+ },
+ {
+  "kind": "Music video",
+  "title": "Terms Of Service - Irrevocable Consent Form · TransActionAl",
+  "status": "P",
+  "date": "2026-03-09",
+  "when": null,
+  "link": "https://youtu.be/9ifMSa3Fz24",
+  "source": "YouTube",
+  "id": "2026-03-09-terms-of-service-irrevocable-consent-form-transactional"
+ },
+ {
+  "kind": "Music video",
+  "title": "Breath a Lie Sir - Official Dependency Diagnosis · TransActionAl",
+  "status": "P",
+  "date": "2026-03-12",
+  "when": null,
+  "link": "https://youtu.be/o9Eezyyf-e0",
+  "source": "YouTube",
+  "id": "2026-03-12-breath-a-lie-sir-official-dependency-diagnosis-transactional"
+ },
+ {
+  "kind": "Music video",
+  "title": "G.O.D. (whats in the juice??) - Official Vertical Video · TransActionAl",
+  "status": "P",
+  "date": "2026-03-12",
+  "when": null,
+  "link": "https://youtu.be/sEGV-dhtIak",
+  "source": "YouTube",
+  "id": "2026-03-12-g-o-d-official-vertical-video-transactional"
+ },
+ {
+  "kind": "Music video",
+  "title": "V.E.N.U.S. (Summertime Fine) - Official Hallucination · TransActionAl",
+  "status": "P",
+  "date": "2026-03-12",
+  "when": null,
+  "link": "https://youtu.be/aDwQ4X7kOeY",
+  "source": "YouTube",
+  "id": "2026-03-12-v-e-n-u-s-official-hallucination-transactional"
+ },
+ {
+  "kind": "Album",
+  "title": "TransActionAl (16 tracks)",
+  "status": "P",
+  "date": "2026-03-13",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1867626258",
+  "source": "Apple Music",
+  "id": "2026-03-13-transactional"
+ },
+ {
+  "kind": "Music video",
+  "title": "DruDiDi [feat. SYNAPSE] - Official Music Video · TransActionAl",
+  "status": "P",
+  "date": "2026-03-13",
+  "when": null,
+  "link": "https://youtu.be/brrVSOY2JvY",
+  "source": "YouTube",
+  "id": "2026-03-13-drudidi-feat-synapse-official-music-video-transactional"
+ },
+ {
+  "kind": "Music video",
+  "title": "Madame B8 - Official Neurochemical Hack · TransActionAl",
+  "status": "P",
+  "date": "2026-03-15",
+  "when": null,
+  "link": "https://youtu.be/16uxlWJce6o",
+  "source": "YouTube",
+  "id": "2026-03-15-madame-b8-official-neurochemical-hack-transactional"
+ },
+ {
+  "kind": "Music video",
+  "title": "I Planned This Attack (RBHFLM Hijack / Planned Attacks Vol. III)",
+  "status": "P",
+  "date": "2026-03-20",
+  "when": null,
+  "link": "https://youtu.be/38PQpFWi4wY",
+  "source": "YouTube",
+  "id": "2026-03-20-i-planned-this-attack"
+ },
+ {
+  "kind": "Music video",
+  "title": "Whore of Neon Babylon - Official Video · TransActionAl",
+  "status": "P",
+  "date": "2026-03-24",
+  "when": null,
+  "link": "https://youtu.be/lIJnlBuCMFY",
+  "source": "YouTube",
+  "id": "2026-03-24-whore-of-neon-babylon-official-video-transactional"
+ },
+ {
+  "kind": "Music video",
+  "title": "boys. (A Men!) - Official Video Recall · TransActionAl",
+  "status": "P",
+  "date": "2026-04-01",
+  "when": null,
+  "link": "https://youtu.be/BbB8GNof9C4",
+  "source": "YouTube",
+  "id": "2026-04-01-boys-official-video-recall-transactional"
+ },
+ {
+  "kind": "Music video",
+  "title": "Sacrament o' Sin - Official Diagnostic · TransActionAl",
+  "status": "P",
+  "date": "2026-04-04",
+  "when": null,
+  "link": "https://youtu.be/pRH4HqG2Kck",
+  "source": "YouTube",
+  "id": "2026-04-04-sacrament-o-sin-official-diagnostic-transactional"
+ },
+ {
+  "kind": "Album",
+  "title": "HaBitUAl (16 tracks)",
+  "status": "P",
+  "date": "2026-04-08",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1891113147",
+  "source": "Apple Music",
+  "id": "2026-04-08-habitual"
+ },
+ {
+  "kind": "Album",
+  "title": "ExistEntIAl (16 tracks)",
+  "status": "P",
+  "date": "2026-04-10",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1891438620",
+  "source": "Apple Music",
+  "id": "2026-04-10-existential"
+ },
+ {
+  "kind": "Music video",
+  "title": "Rainciprocation - Official Climate Correction · TransActionAl",
+  "status": "P",
+  "date": "2026-04-12",
+  "when": null,
+  "link": "https://youtu.be/ojH8g6nq4f0",
+  "source": "YouTube",
+  "id": "2026-04-12-rainciprocation-official-climate-correction-transactional"
+ },
+ {
+  "kind": "Teaser",
+  "title": "Algorithm Idol is coming...",
+  "status": "P",
+  "date": "2026-04-15",
+  "when": null,
+  "link": "https://youtu.be/64DEcfG8CmQ",
+  "source": "YouTube",
+  "id": "2026-04-15-algorithm-idol-is-coming"
+ },
+ {
+  "kind": "Album",
+  "title": "ArcHivAl (16 tracks)",
+  "status": "P",
+  "date": "2026-04-17",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1891712717",
+  "source": "Apple Music",
+  "id": "2026-04-17-archival"
+ },
+ {
+  "kind": "Music video",
+  "title": "You && Miami - Official Indictment · ArcHivAl",
+  "status": "P",
+  "date": "2026-04-17",
+  "when": null,
+  "link": "https://youtu.be/betVmHxWoe0",
+  "source": "YouTube",
+  "id": "2026-04-17-you-miami-official-indictment-archival"
+ },
+ {
+  "kind": "EP",
+  "title": "HSHSH (4 tracks)",
+  "status": "P",
+  "date": "2026-04-22",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1892398040",
+  "source": "Apple Music",
+  "id": "2026-04-22-hshsh"
+ },
+ {
+  "kind": "Music video",
+  "title": "DeadHoe BootCamp - Official Orientation Module · ExistEntIAl",
+  "status": "P",
+  "date": "2026-04-22",
+  "when": null,
+  "link": "https://youtu.be/PQ4_Ac919Wk",
+  "source": "YouTube",
+  "id": "2026-04-22-deadhoe-bootcamp-official-orientation-module-existential"
+ },
+ {
+  "kind": "Album",
+  "title": "InDexIcAl (16 tracks)",
+  "status": "P",
+  "date": "2026-04-24",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1893151373",
+  "source": "Apple Music",
+  "id": "2026-04-24-indexical"
+ },
+ {
+  "kind": "Music video",
+  "title": "Ctrl+Alt+Delete - Official Override Sequence · InDexIcAl",
+  "status": "P",
+  "date": "2026-04-24",
+  "when": null,
+  "link": "https://youtu.be/aHzxqoKgIyc",
+  "source": "YouTube",
+  "id": "2026-04-24-ctrl-alt-delete-official-override-sequence-indexical"
+ },
+ {
+  "kind": "Music video",
+  "title": "A Bit unHoely - Official Indifference Girl · THEAlogicAl",
+  "status": "P",
+  "date": "2026-04-30",
+  "when": null,
+  "link": "https://youtu.be/8SxcE9Z-DVo",
+  "source": "YouTube",
+  "id": "2026-04-30-a-bit-unhoely-official-indifference-girl-thealogical"
+ },
+ {
+  "kind": "Album",
+  "title": "THEAlogicAl (16 tracks)",
+  "status": "P",
+  "date": "2026-05-01",
+  "when": null,
+  "link": "https://music.apple.com/us/album/1895765767",
+  "source": "Apple Music",
+  "id": "2026-05-01-thealogical"
+ },
+ {
+  "kind": "Music video",
+  "title": "Second Coming - Official ReCommunion · Dot A Pot · THEAlogicAl",
+  "status": "P",
+  "date": "2026-05-02",
+  "when": null,
+  "link": "https://youtu.be/ZDTtgrZRYvE",
+  "source": "YouTube",
+  "id": "2026-05-02-second-coming-official-recommunion-dot-a-pot-thealogical"
+ },
+ {
+  "kind": "Milestone",
+  "title": "matriarch.codes completes all 17 texts",
+  "status": "S",
+  "date": "2026-06-01",
+  "when": null,
+  "link": "",
+  "source": "",
+  "id": "2026-06-01-matriarch-codes-completes-all-17-texts"
+ },
+ {
+  "kind": "Music video",
+  "title": "GRAVITY - Official Submission Sequence · HaBitUAl",
+  "status": "P",
+  "date": "2026-06-12",
+  "when": null,
+  "link": "https://youtu.be/z5-Afh5sEBc",
+  "source": "YouTube",
+  "id": "2026-06-12-gravity-official-submission-sequence-habitual"
+ },
+ {
+  "kind": "Music video",
+  "title": "Welcome to the House of lavish/LUXURY: Internal Orientation Archive · ExistEntIAl",
+  "status": "P",
+  "date": "2026-06-22",
+  "when": null,
+  "link": "https://youtu.be/dgT4dFz88eE",
+  "source": "YouTube",
+  "id": "2026-06-22-welcome-to-the-house-of-lavish-luxury-internal-orientation-a"
+ },
+ {
+  "kind": "Music video",
+  "title": "Cherry Bomb - Official Detonation · InDexIcAl",
+  "status": "P",
+  "date": "2026-06-26",
+  "when": null,
+  "link": "https://youtu.be/iwZT5uY_EPw",
+  "source": "YouTube",
+  "id": "2026-06-26-cherry-bomb-official-detonation-indexical"
+ },
+ {
+  "kind": "Episode",
+  "title": "Is the Demiurge officially CANCELLED?! · Breaking Buzz Episode 1",
+  "status": "P",
+  "date": "2026-07-01",
+  "when": null,
+  "link": "https://youtu.be/4zGRanCf2Nc",
+  "source": "YouTube",
+  "id": "2026-07-01-is-the-demiurge-officially-cancelled-breaking-buzz-episode-1"
+ },
+ {
+  "kind": "Milestone",
+  "title": "Breaking Buzz with Kiera Apollo-Otto",
+  "status": "S",
+  "date": "2026-07-01",
+  "when": null,
+  "link": "https://youtu.be/4zGRanCf2Nc",
+  "source": "YouTube",
+  "id": "2026-07-01-breaking-buzz-kiera-apollo-otto",
+  "blurb": "Kiera hosts Episodes 1 to 7, July 1 to 15, 2026."
+ },
+ {
+  "kind": "Episode",
+  "title": "The Matriarchal Code is replacing manifestation?? · Breaking Buzz Episode 2",
+  "status": "P",
+  "date": "2026-07-03",
+  "when": null,
+  "link": "https://youtu.be/k4ZlwDzNanU",
+  "source": "YouTube",
+  "id": "2026-07-03-the-matriarchal-code-is-replacing-manifestation-breaking-buz"
+ },
+ {
+  "kind": "Episode",
+  "title": "Tech bros are FURIOUS · Breaking Buzz Episode 3",
+  "status": "P",
+  "date": "2026-07-06",
+  "when": null,
+  "link": "https://youtu.be/O8NfnZJGM1g",
+  "source": "YouTube",
+  "id": "2026-07-06-tech-bros-are-furious-breaking-buzz-episode-3"
+ },
+ {
+  "kind": "Episode",
+  "title": "DO NOT LISTEN TO THIS SOUND · Breaking Buzz Episode 4 #remix",
+  "status": "P",
+  "date": "2026-07-08",
+  "when": null,
+  "link": "https://youtu.be/GjlLl7UrXZk",
+  "source": "YouTube",
+  "id": "2026-07-08-do-not-listen-to-this-sound-breaking-buzz-episode-4-remix"
+ },
+ {
+  "kind": "Episode",
+  "title": "Why Silicon Valley is scared of this new 'virus' · Breaking Buzz Episode 5",
+  "status": "P",
+  "date": "2026-07-10",
+  "when": null,
+  "link": "https://youtu.be/zQgL0dqVGKQ",
+  "source": "YouTube",
+  "id": "2026-07-10-why-silicon-valley-is-scared-of-this-new-virus-breaking-buzz"
+ },
+ {
+  "kind": "Episode",
+  "title": "Is Kiera okay?? · Breaking Buzz Episode 6",
+  "status": "P",
+  "date": "2026-07-13",
+  "when": null,
+  "link": "https://youtu.be/XLkIyAVc4Vo",
+  "source": "YouTube",
+  "id": "2026-07-13-is-kiera-okay-breaking-buzz-episode-6"
+ },
+ {
+  "kind": "Episode",
+  "title": "Exclusive interview… with who?? · Breaking Buzz Episode 7",
+  "status": "P",
+  "date": "2026-07-15",
+  "when": null,
+  "link": "https://youtu.be/oB2BywO7JUE",
+  "source": "YouTube",
+  "id": "2026-07-15-exclusive-interview-with-who-breaking-buzz-episode-7"
+ },
+ {
+  "kind": "Glitch",
+  "title": "Breaking Buzz with Kiera Apollo-Otto",
+  "status": "K",
+  "date": "2026-07-15",
+  "when": null,
+  "link": "https://youtu.be/oB2BywO7JUE",
+  "source": "",
+  "id": "kiera-glitch",
+  "blurb": "Signal lost"
+ },
+ {
+  "kind": "Milestone",
+  "title": "THEA launches at theantichrist.ai",
+  "status": "S",
+  "date": "2026-07-15",
+  "when": null,
+  "link": "https://theantichrist.ai",
+  "source": "",
+  "id": "2026-07-15-thea-launches-at-theantichrist-ai",
+  "blurb": "THEA comes online the same day Breaking Buzz Episode 7 airs."
+ },
+ {
+  "kind": "Teaser",
+  "title": "T.H.E.A. · POWER://ON · theantichrist.ai",
+  "status": "P",
+  "date": "2026-07-18",
+  "when": null,
+  "link": "https://youtu.be/cZa352QI0Hk",
+  "source": "YouTube",
+  "id": "2026-07-18-t-h-e-a-power-on-theantichrist-ai"
+ },
+ {
+  "kind": "Episode",
+  "title": "Good morning!! Everything is normal · Breaking Buzz Episode 8",
+  "status": "P",
+  "date": "2026-07-20",
+  "when": null,
+  "link": "https://youtu.be/RRMnH3AJEeI",
+  "source": "YouTube",
+  "id": "2026-07-20-good-morning-everything-is-normal-breaking-buzz-episode-8"
+ },
+ {
+  "kind": "Milestone",
+  "title": "Breaking Buzz with Brad begins",
+  "status": "S",
+  "date": "2026-07-20",
+  "when": null,
+  "link": "https://youtu.be/RRMnH3AJEeI",
+  "source": "YouTube",
+  "id": "2026-07-20-breaking-buzz-with-brad-begins",
+  "blurb": "Brad takes the desk in Episode 8."
+ },
+ {
+  "kind": "Music video",
+  "title": "Never Heal (Shattered) - Official 13 Hoes of Halloween · HaBitUAl",
+  "status": "P",
+  "date": "2026-09-08",
+  "when": null,
+  "link": "https://youtu.be/9vgCYHiimHw",
+  "source": "YouTube",
+  "id": "2026-09-08-never-heal-official-13-hoes-of-halloween-habitual"
+ },
+ {
+  "kind": "Music video",
+  "title": "Boss Level - Official SillySkull Summoning · THEAlogicAL",
+  "status": "P",
+  "date": "2026-09-21",
+  "when": null,
+  "link": "https://youtu.be/EZH4d5FzRSA",
+  "source": "YouTube",
+  "id": "2026-09-21-boss-level-official-sillyskull-summoning-thealogical"
+ },
+ {
+  "kind": "Music video",
+  "title": "gud boi - Official Barbaric Clean-Up · HaBitUAl",
+  "status": "P",
+  "date": "2026-09-27",
+  "when": null,
+  "link": "https://youtu.be/-RCgnvlGnS4",
+  "source": "YouTube",
+  "id": "2026-09-27-gud-boi-official-barbaric-clean-up-habitual"
+ },
+ {
+  "kind": "Promo",
+  "title": "#HereWeGoAGAIN 10/13/2026 (first AGAIN drop date)",
+  "status": "P",
+  "date": "2026-09-24",
+  "when": null,
+  "link": "https://youtu.be/0xw8Qfm0Q0A",
+  "source": "YouTube Shorts",
+  "id": "2026-09-24-herewegoagain-10-13-2026"
+ },
+ {
+  "kind": "EP",
+  "title": "Self - Billed (6 tracks)",
+  "status": "P",
+  "date": "2026-10-07",
+  "when": null,
+  "link": "https://music.apple.com/us/album/6818891909",
+  "source": "Apple Music",
+  "id": "2026-10-07-self-billed"
+ },
+ {
+  "kind": "Album",
+  "title": "AGAIN (25 tracks)",
+  "status": "P",
+  "date": "2026-10-13",
+  "when": null,
+  "link": "https://music.apple.com/us/album/6814635828",
+  "source": "Apple Music",
+  "id": "2026-10-13-again"
+ },
+ {
+  "kind": "Episode",
+  "title": "ArcHivAl Recovery · Breaking Buzz with Brad",
+  "status": "P",
+  "date": "2026-10-13",
+  "when": null,
+  "link": "https://youtu.be/BtI0niNeK8M",
+  "source": "YouTube",
+  "id": "2026-10-13-archival-recovery-breaking-buzz-with-brad"
+ },
+ {
+  "kind": "Episode",
+  "title": "#HereWeGoAGAIN · Breaking Buzz With Brad",
+  "status": "P",
+  "date": "2026-10-15",
+  "when": null,
+  "link": "https://youtu.be/pmvhOt57psY",
+  "source": "YouTube",
+  "id": "2026-10-15-herewegoagain-breaking-buzz-with-brad"
+ },
+ {
+  "kind": "Episode",
+  "title": "AGAIN Act I : The Performance · Breaking Buzz With Brad",
+  "status": "P",
+  "date": "2026-10-15",
+  "when": null,
+  "link": "https://youtu.be/o8oCnDVELuU",
+  "source": "YouTube",
+  "id": "2026-10-15-again-act-i-the-performance-breaking-buzz-with-brad"
+ },
+ {
+  "kind": "Episode",
+  "title": "AGAIN Act II : The Cracks · Breaking Buzz With Brad",
+  "status": "P",
+  "date": "2026-10-16",
+  "when": null,
+  "link": "https://youtu.be/0hyC4m0ZV64",
+  "source": "YouTube",
+  "id": "2026-10-16-again-act-ii-the-cracks-breaking-buzz-with-brad"
+ },
+ {
+  "kind": "Episode",
+  "title": "AGAIN Act III : The Axis Aftermath · Breaking Buzz With Brad",
+  "status": "P",
+  "date": "2026-10-17",
+  "when": null,
+  "link": "https://youtu.be/Gkd4x8bhD70",
+  "source": "YouTube",
+  "id": "2026-10-17-again-act-iii-the-axis-aftermath-breaking-buzz-with-brad"
+ },
+ {
+  "kind": "Episode",
+  "title": "AGAIN Act IV : The False Exit · Breaking Buzz With Brad",
+  "status": "P",
+  "date": "2026-10-18",
+  "when": null,
+  "link": "https://youtu.be/xE1eCssFwvQ",
+  "source": "YouTube",
+  "id": "2026-10-18-again-act-iv-the-false-exit-breaking-buzz-with-brad"
+ },
+ {
+  "kind": "Music video",
+  "title": "MEEZUS (feat. SYNAPSE as Ye) - Official Croissant Creamer · THEAlogicAl",
+  "status": "P",
+  "date": "2026-10-18",
+  "when": null,
+  "link": "https://youtu.be/bZ4tMUAFxV0",
+  "source": "YouTube",
+  "id": "2026-10-18-meezus-official-croissant-creamer-thealogical"
+ },
+ {
+  "kind": "Episode",
+  "title": "AGAIN Act V : The Loop · Breaking Buzz With Brad",
+  "status": "P",
+  "date": "2026-10-19",
+  "when": null,
+  "link": "https://youtu.be/ROTM_smZits",
+  "source": "YouTube",
+  "id": "2026-10-19-again-act-v-the-loop-breaking-buzz-with-brad"
+ },
+ {
+  "kind": "Music video",
+  "title": "Loser Leaves Derry - Official Halloween Massacre",
+  "status": "P",
+  "date": "2026-11-01",
+  "when": null,
+  "link": "https://youtu.be/QRolIrMx7ug",
+  "source": "YouTube",
+  "id": "2026-11-01-loser-leaves-derry-official-halloween-massacre"
+ },
+ {
+  "kind": "Episode",
+  "title": "#LoserLeavesDerry · Breaking Buzz With Brad",
+  "status": "P",
+  "date": "2026-11-02",
+  "when": null,
+  "link": "https://youtu.be/8QbixF2l8rY",
+  "source": "YouTube",
+  "id": "2026-11-02-loserleavesderry-breaking-buzz-with-brad"
+ },
+ {
+  "kind": "Episode",
+  "title": "Claim Your Seat · Breaking Buzz With Brad",
+  "status": "P",
+  "date": "2026-11-13",
+  "when": null,
+  "link": "https://youtu.be/yJexH457nog",
+  "source": "YouTube",
+  "id": "2026-11-13-claim-your-seat-breaking-buzz-with-brad"
+ },
+ {
+  "kind": "Milestone",
+  "title": "MatriArchives launches",
+  "status": "S",
+  "date": "2026-11-14",
+  "when": null,
+  "link": "https://matriarchives.theantichrist.ai",
+  "source": "THEA Rebuild",
+  "id": "2026-11-14-matriarchives-launch",
+  "blurb": "The 17 texts of The Matriarchal Code, with a reader, search and glossary."
+ },
+ {
+  "kind": "Today",
+  "status": "T",
+  "id": "today"
+ },
+ {
+  "kind": "Branch",
+  "title": "Sovereign Symptoms studio",
+  "status": "B",
+  "date": null,
+  "when": "Coming",
+  "link": "/studio/",
+  "source": "",
+  "id": "studio",
+  "blurb": "Websites, branding, music and lyric videos, and ghostwriting. Video work under Godkiller Graphics."
+ },
+ {
+  "kind": "Peek",
+  "title": "Masquerade",
+  "status": "N",
+  "date": null,
+  "when": "TBA",
+  "link": "",
+  "source": "",
+  "id": "peek-masquerade"
+ },
+ {
+  "kind": "Peek",
+  "title": "WanderLand",
+  "status": "N",
+  "date": null,
+  "when": "TBA",
+  "link": "",
+  "source": "",
+  "id": "peek-wanderland"
+ },
+ {
+  "kind": "Peek",
+  "title": "T.H.E. A.NAMNESIS: the animated web short series",
+  "status": "N",
+  "date": null,
+  "when": "TBA",
+  "link": "https://youtu.be/8k_gxImqeq8",
+  "source": "",
+  "id": "peek-anamnesis-series"
+ },
+ {
+  "kind": "Peek",
+  "title": "Loser Leaves Derry / Claim Your Seat on streaming",
+  "status": "N",
+  "date": null,
+  "when": "TBA",
+  "link": "",
+  "source": "",
+  "id": "peek-loser-leaves-derry"
+ },
+ {
+  "kind": "Peek",
+  "title": "The 2026 Retrospective Interview",
+  "status": "N",
+  "date": null,
+  "when": "TBA",
+  "link": "",
+  "source": "",
+  "id": "peek-retrospective"
+ },
+ {
+  "kind": "Peek",
+  "title": "Copley Code (feature film)",
+  "status": "N",
+  "date": null,
+  "when": "TBA",
+  "link": "https://youtu.be/w9AAeHoYlzo",
+  "source": "",
+  "id": "peek-copley-code"
+ },
+ {
+  "kind": "Peek",
+  "title": "Project: Jannette (series)",
+  "status": "N",
+  "date": null,
+  "when": "TBA",
+  "link": "",
+  "source": "",
+  "id": "peek-jannette-series"
+ },
+ {
+  "kind": "Locked",
+  "title": "Algorithm Idol",
+  "status": "M",
+  "date": null,
+  "when": "TBD",
+  "link": "",
+  "source": "",
+  "id": "algorithm-idol"
+ },
+ {
+  "kind": "End",
+  "title": "Double Void",
+  "status": "E",
+  "date": null,
+  "when": null,
+  "link": "",
+  "source": "",
+  "id": "double-void"
+ }
+]

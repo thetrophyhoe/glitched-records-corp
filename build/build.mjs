@@ -325,7 +325,7 @@ try{const r=await fetch(f.action,{method:'POST',headers:{'Accept':'application/j
 catch(e){st.textContent='The message could not be sent right now. Please email ${CONTACT} instead.';st.className='status err';}btn.disabled=false;st.focus();});})();`;
 write("contact/index.html", head({ title: "Contact · Glitched Records", desc: "Send Glitched Records a message about music, licensing, press or the Sovereign Symptoms studio.", canonical: `${SITE}/contact/`, jsonld: [ORG] }) + `<body>${HEADER("contact")}
 <main id="main" class="wrap"><h1>Contact</h1><p class="meta">Music, licensing, press, or work with the Sovereign Symptoms studio. We reply by email.</p>
-<form class="form" id="cf" action="/api/contact" method="post" novalidate>
+<form class="form" id="cf" action="/api/contact/" method="post" novalidate>
 <label>Your name<input name="name" autocomplete="name" required maxlength="120"></label>
 <label>Your email<input name="email" type="email" autocomplete="email" required maxlength="200"></label>
 <label>About<select name="topic"><option>General</option><option>Music and licensing</option><option>Press</option><option>Studio: websites</option><option>Studio: branding</option><option>Studio: music or lyric videos</option><option>Studio: ghostwriting</option><option>Other</option></select></label>

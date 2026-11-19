@@ -34,7 +34,7 @@ for (const f of fs.readdirSync(b64dir)) {
   if (!f.endsWith(".b64")) continue;
   write(path.join("assets", f.replace(/\.b64$/, "")), Buffer.from(fs.readFileSync(path.join(b64dir, f), "utf8"), "base64"));
 }
-// /amenti/ stays exactly as it is in the repo (decision 8 pending)
+// /amenti/ is copied as-is from the repo (decision 8 applied: noindex, Series Overview, out of sitemap)
 const copyDir = (src, dst) => { if (!fs.existsSync(src)) return; for (const f of fs.readdirSync(src)) { const s = path.join(src, f), d = path.join(dst, f); if (fs.statSync(s).isDirectory()) copyDir(s, d); else { fs.mkdirSync(path.dirname(d), { recursive: true }); fs.copyFileSync(s, d); } } };
 copyDir(path.join(ROOT, "amenti"), path.join(OUT, "amenti"));
 
@@ -339,7 +339,7 @@ write("contact/index.html", head({ title: "Contact · Glitched Records", desc: "
 </main>${FOOTER}<script>${contactJs}</script></body></html>`);
 
 // ---------- sitemap + robots ----------
-const urls = [`${SITE}/`, `${SITE}/contact/`, `${SITE}/amenti/`, ...pages.map((e) => SITE + slugOf(e))];
+const urls = [`${SITE}/`, `${SITE}/contact/`, ...pages.map((e) => SITE + slugOf(e))];
 write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${u}</loc><lastmod>${TODAY}</lastmod></url>`).join("\n")}\n</urlset>\n`);
 write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 write("events.json", JSON.stringify(events.map((e) => (e.status === "L" ? { id: e.id, kind: "Locked", mask: e.mask, unlockAt: e.unlockAt } : e)), null, 1));

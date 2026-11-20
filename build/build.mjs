@@ -106,7 +106,7 @@ dialog.tx[open]{animation:gin .45s ease-out}@keyframes gin{0%{opacity:0;transfor
 .form input,.form select,.form textarea{font:inherit;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
 .form textarea{min-height:160px;resize:vertical}.form .check{display:flex;gap:10px;align-items:flex-start;color:var(--text)}.form .check input{margin-top:4px}
 .form button{justify-self:start;background:var(--gold);color:#000;border:0;border-radius:999px;padding:10px 20px;font:inherit;font-weight:700;cursor:pointer}
-.hp{position:absolute;left:-9999px}.status{min-height:1.5em}.status.err{color:#ff8fae}.status.ok{color:#9be7a8}
+.hp{position:absolute;left:-9999px}.cf-turnstile{margin:12px 0}.status{min-height:1.5em}.status.err{color:#ff8fae}.status.ok{color:#9be7a8}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (max-width:760px){
  .timeline{overflow:visible}.timeline ol{flex-direction:column;padding:20px 16px 40px 16px;min-height:0}
@@ -324,11 +324,17 @@ write("index.html", home);
 
 
 // ---------- contact ----------
+// TURNSTILE_SITE_KEY is read at build time (Vercel env, available to the build). When unset, the widget is omitted.
+const turnstileSiteKey = String(process.env.TURNSTILE_SITE_KEY || "").trim();
 const contactJs = `(()=>{const f=document.getElementById('cf'),st=document.getElementById('cf-status');
+const stamp=()=>{const t=document.getElementById('cf-started');if(t)t.value=String(Date.now());};
+stamp();
 const q=new URLSearchParams(location.search);if(q.get('sent')){st.textContent='Thanks, your message is on its way.';st.className='status ok';}else if(q.get('error')){st.textContent=q.get('error');st.className='status err';}
 f.addEventListener('submit',async ev=>{ev.preventDefault();const btn=f.querySelector('button');btn.disabled=true;st.className='status';st.textContent='Sending…';
-try{const r=await fetch(f.action,{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f))});const j=await r.json();st.textContent=j.message;st.className='status '+(j.ok?'ok':'err');if(j.ok)f.reset();}
-catch(e){st.textContent='The message could not be sent right now. Please email ${CONTACT} instead.';st.className='status err';}btn.disabled=false;st.focus();});})();`;
+try{const r=await fetch(f.action,{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f))});const j=await r.json();st.textContent=j.message;st.className='status '+(j.ok?'ok':'err');if(j.ok){f.reset();stamp();${turnstileSiteKey ? "try{turnstile.reset()}catch(e){}" : ""}}
+}catch(e){st.textContent='The message could not be sent right now. Please email ${CONTACT} instead.';st.className='status err';}btn.disabled=false;st.focus();});})();`;
+const turnstileWidget = turnstileSiteKey ? `<div class="cf-turnstile" data-sitekey="${esc(turnstileSiteKey)}" data-theme="dark"></div>` : "";
+const turnstileScript = turnstileSiteKey ? `<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>` : "";
 write("contact/index.html", head({ title: "Contact · Glitched Records", desc: "Send Glitched Records a message about music, licensing, press or the Sovereign Symptoms studio.", canonical: `${SITE}/contact/`, jsonld: [ORG] }) + `<body>${HEADER("contact")}
 <main id="main" class="wrap"><h1>Contact</h1><p class="meta">Music, licensing, press, or work with the Sovereign Symptoms studio. We reply by email.</p>
 <form class="form" id="cf" action="/api/contact/" method="post" novalidate>
@@ -337,12 +343,14 @@ write("contact/index.html", head({ title: "Contact · Glitched Records", desc: "
 <label>About<select name="topic"><option>General</option><option>Music and licensing</option><option>Press</option><option>Studio: websites</option><option>Studio: branding</option><option>Studio: music or lyric videos</option><option>Studio: ghostwriting</option><option>Other</option></select></label>
 <label>Message<textarea name="message" required maxlength="5000"></textarea></label>
 <label class="hp" aria-hidden="true">Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>
+<input type="hidden" name="started" id="cf-started" value="">
 <label class="check"><input type="checkbox" name="consent" value="yes" required><span>OK to use my name and email to reply to this message. Nothing else is stored on this site.</span></label>
+${turnstileWidget}
 <button type="submit">Send message</button>
 <p class="status" id="cf-status" role="status" tabindex="-1"></p>
 </form>
 <p class="meta" style="margin-top:24px">Prefer email? <a href="mailto:${CONTACT}">${CONTACT}</a></p>
-</main>${FOOTER}<script>${contactJs}</script></body></html>`);
+</main>${FOOTER}${turnstileScript}<script>${contactJs}</script></body></html>`);
 
 // ---------- studio (incoming) ----------
 write("studio/index.html", head({ title: "Sovereign Symptoms studio · Glitched Records", desc: "Sovereign Symptoms, the Glitched Records studio for websites, branding, Godkiller Graphics video work and ghostwriting. Opening soon.", canonical: `${SITE}/studio/`, jsonld: [ORG] }).replace("</title>", "</title><meta name=\"robots\" content=\"noindex, follow\">") + `<body>${HEADER("studio")}

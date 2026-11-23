@@ -301,7 +301,8 @@ dlg.addEventListener('close',()=>btn.focus());
 const desc = `The Glitched Records universe as one timeline: every release by ${ARTIST}, music videos, episodes of Breaking Buzz and The Wires of Amenti, and what comes next.`;
 const home = head({ title: "Glitched Records · The timeline", desc, canonical: `${SITE}/`, jsonld: [ORG, GROUP_FULL, website, itemList] }) + `<body>${HEADER("home")}
 <main id="main">
-<section class="hero"><h1>The Glitched timeline</h1><p>Everything in one line, opened on today. Scroll back through every drop by ${ARTIST}, or look ahead. Latest: <a href="/timeline/${pages.filter((e) => RELEASE.includes(e.kind)).at(-1).id}/">${esc(pages.filter((e) => RELEASE.includes(e.kind)).at(-1).title)}</a>. Bloody Gnosis: out now. The animated series: coming.</p></section>
+<section class="hero"><h1>The Glitched timeline</h1><p>Everything in one line, opened on today. Scroll back through every drop by ${ARTIST}, or look ahead. Latest: <a href="/timeline/${pages.filter((e) => RELEASE.includes(e.kind)).at(-1).id}/">${esc(pages.filter((e) => RELEASE.includes(e.kind)).at(-1).title)}</a>. Bloody Gnosis: out now. The animated series: coming.</p>
+<p>Built without a studio, a budget, or a fixed address: the Glitched Universe has been made, from day one, on a single damaged smartphone.</p></section>
 <div class="bar" role="group" aria-label="Show lanes">
 <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
 <button class="chip" type="button" data-filter="music" aria-pressed="false">Music</button>
